@@ -1,0 +1,81 @@
+# ============================================
+# PYTHON
+# ============================================
+# Kompilierte Python-Dateien (werden automatisch erstellt)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# ============================================
+# JUPYTER NOTEBOOKS
+# ============================================
+# Checkpoint-Dateien von Jupyter (Auto-Save)
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ============================================
+# VIRTUELLE UMGEBUNGEN
+# ============================================
+# Virtuelle Python-Umgebungen (zu groß für Git)
+venv/
+env/
+ENV/
+.venv/
+
+# ============================================
+# IDE / EDITOR
+# ============================================
+# VS Code Einstellungen
+.vscode/
+# PyCharm Einstellungen
+.idea/
+# Vim Swap-Dateien
+*.swp
+*.swo
+# macOS System-Dateien
+.DS_Store
+# Windows System-Dateien
+Thumbs.db
+
+# ============================================
+# DATEN (zu groß für Git!)
+# ============================================
+# Rohdaten und bearbeitete Daten
+data/raw/
+data/processed/
+*.csv
+*.xlsx
+*.json
+
+# ============================================
+# MODELLE (zu groß für Git)
+# ============================================
+# Trainierte ML-Modelle
+*.pkl
+*.joblib
+*.h5
+*.pt
+*.pth
+results/models/
+
+# ============================================
+# OUTPUTS
+# ============================================
+# Generierte Plots (optional - kann auch eingecheckt werden)
+results/plots/
+*.png
+*.jpg
+
+# ============================================
+# UMGEBUNGSVARIABLEN
+# ============================================
+# Geheime Daten (API Keys, Passwörter)
+.env
+.env.local
+
+# ============================================
+# LOGS
+# ============================================
+*.log
+logs/
