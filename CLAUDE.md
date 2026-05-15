@@ -24,8 +24,13 @@
 - Class Imbalance wird selbst behandelt (z.B. SMOTE, Class Weights)
 - Fehlende Werte: keine
 
+## Modellierungsentscheidungen
+- **Primärmetrik: PR-AUC** (Average Precision) — besser als ROC-AUC bei starkem Class Imbalance (86:14), fokussiert auf Minderheitsklasse; No-skill Baseline ≈ 0.14
+- Sekundärmetriken: ROC-AUC, Recall (Minderheitsklasse), F1 (Minderheitsklasse), Accuracy (wird gereporten, aber mit Hinweis auf Bias)
+- **Evaluation: Stratified 5-Fold CV**, seed=42 — SMOTE ausschließlich innerhalb jedes Trainingsfolds (imblearn Pipeline), kein Leakage
+- **Baseline-Modelle:** Logistic Regression mit class_weight='balanced' und mit SMOTE
+
 ## Offene Teamentscheidungen
-- Hauptmetrik (AUC-ROC, F1, Recall?) — Begründung muss in Thesis
 - Arbeitsteilung & Timeline
 
 ## Projektstruktur
